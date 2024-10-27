@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/util.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li><a href="index.html">Home</a></li>
+              <!--li><a href="#">Login</a></li-->
+              <li><a href="#" >PHP</a></li>
+              <li><a href="Program.html">Programs</a></li>
+              <li><a href="#">About</a></li>
+              
+            </ul>
+            <ul>
+              <li><a href="#"><img src="img/mylogo.png" width="50px" alt="">
+              </a></a></li>
+              <li class="hideOnMobile"><a href="/">Home</a></li>
+              <!--li class="hideOnMobile"><a href="#">Login</a></li-->
+              <li class="hideOnMobile" onclick=close()><a href="#">PHP</a></li>
+              <li class="hideOnMobile"><a href="Program.html">Programs</a></li>
+              <li class="hideOnMobile"><a href="#">About</a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+          </nav>
+                
+    <!--/header-->
+  
+    <div class="bg">
+        <div class="overlay">
+          <h1 class="head">CodeLearner</h1>
+            <p class="p1">Welcome</p>
+        <button class="neon-button1"><a href="#java">Get Started</a></button>
+    </div></div>
+    </header>
+    <div class="main">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image" id="java">
+                <a href="java.html"><img src="img/images.png" alt="Card Image 1">
+                </a></div>
+            <div class="card-content">
+                <h3>Learn PHP</h3>
+                <p>Master the fundamentals of PHP, a powerful and versatile scripting language used in web development to create dynamic content and interactive websites. Dive into our comprehensive tutorials and start building robust applications today.</p>
+<button class="nano-button"><a href="Program.html">Click Me</a></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" id="java2">
+                <img src="img/images.png" alt="Card Image 2">
+            </div>
+            <div class="card-content">
+                <h3>PHP Programs</h3>
+                <p>Explore a wide range of PHP programs that cover everything from basic syntax to advanced functionalities. Perfect for honing your coding skills and understanding key concepts in PHP programming.</p>
+
+<button class="nano-button">Click Me</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="footer">
+            <p>Copyright &copy; 2024 Asha</p>
+        </div>
+    </footer>
+       
+         
+
+</body>
+<script src="nav.js"></script>
+<script src="main.js"></script>
+</html>

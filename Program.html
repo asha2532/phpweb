@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/util.css">
+    <style>
+      main {
+            padding: 1%;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        .code {
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            color: aqua;
+        }
+
+        .output img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            main {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .code, .output img {
+                padding: 8px;
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Sidebar Styling */
+        .sidebar2 {
+            width: 25%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            height: auto;
+        }
+
+        .sidebar2 ul {
+            list-style: none;
+        }
+
+        .sidebar2 ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar2 ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        .sidebar2 ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Content Styling */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        #content-display {
+            background-color: #000;
+            padding: 20px;
+            color: #fff;
+            border-radius: 5px;
+            /* min-height: 400px; */
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar2 {
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li><a href="index.html">Home</a></li>
+              <!--li><a href="#">Login</a></li-->
+              <li><a href="#">PHP</a></li>
+              <li><a href="Program.html">Programs</a></li>
+              <li><a href="#">About</a></li>
+              
+            </ul>
+            <ul>
+              <li><a href="#"><span><img src="img/mylogo.png" width="50px" alt=""></span>
+              </a></a></li>
+              <li class="hideOnMobile"><a href="index.html">Home</a></li>
+              <!--li class="hideOnMobile"><a href="#">Login</a></li-->
+              <li class="hideOnMobile"><a href="#">PHP</a></li>
+              <li class="hideOnMobile"><a href="Program.html">Programs</a></li>
+              <li class="hideOnMobile"><a href="#">About</a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+          </nav>
+  
+    <div class="bg">
+        <div class="overlay">
+            <p>PHP (Hypertext Preprocessor) is a popular open-source scripting language primarily used for web development. It is embedded within HTML and executes on the server side, making it particularly suited for creating dynamic and interactive websites. PHP can connect to databases, manage sessions, handle form data, and perform many other tasks essential to building modern web applications.</p>
+        <button class="neon-button1"><a href="#content-display">Learn Php</a></button>
+    </div></div>
+    </header>
+    <div class="container">
+        <div class="sidebar2">
+          <ul>
+            <li><a href="#content-display" onclick="showContent('topic1')">Introduction to PHP</a></li>
+            <li><a href="#content-display" onclick="showContent('topic2')">Web Applications</a></li>
+            <li><a href="#content-display" onclick="showContent('topic3')">PHP Basics</a></li>
+            <li><a href="#content-display" onclick="showContent('topic4')">Control Structures</a></li>
+            <li><a href="#content-display" onclick="showContent('topic5')">Functions</a></li>
+            <li><a href="#content-display" onclick="showContent('topic6')">String Handling</a></li>
+            <li><a href="#content-display" onclick="showContent('topic7')">Arrays</a></li>
+            <li><a href="#content-display" onclick="showContent('topic8')">Forms</a></li>
+            <li><a href="#content-display" onclick="showContent('topic9')">PHP with Databases</a></li>
+            <li><a href="#content-display" onclick="showContent('topic10')">Cookies</a></li>
+            <li><a href="#content-display" onclick="showContent('topic11')">Sessions</a></li>
+            <li><a href="#content-display" onclick="showContent('topic12')">File System</a></li>
+          </ul>
+        </div>
+        
+        <div class="content">
+          <div id="content-display">
+            
+          </div>
+        </div>
+      </div>
+    
+<footer>
+    <div class="footer">
+        <p>Copyright &copy; 2024 Asha</p>
+        </div>
+</footer>
+        
+
+</body>
+<script src="main.js"></script>
+<script src="nav.js"></script>
+
+</html>
